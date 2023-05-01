@@ -1,0 +1,12 @@
+
+{:paths ["source-code/cljs"]
+ :deps  {bithandshake/cljc-fruits           {:git/url "https://github.com/bithandshake/cljc-fruits"
+                                             :sha     "79741278ef58a83ab1f6eeef8266cbcfa052dc3b"}
+         bithandshake/cljs-dom              {:git/url "https://github.com/bithandshake/cljs-dom"
+                                             :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+         bithandshake/intersection-observer {:git/url "https://github.com/bithandshake/cljs-intersection-observer"
+                                             :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+         bithandshake/metamorphic-content   {:git/url "https://github.com/bithandshake/cljs-metamorphic-content"
+                                             :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+         bithandshake/reagent-api           {:git/url "https://github.com/bithandshake/reagent-api"
+                                             :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
