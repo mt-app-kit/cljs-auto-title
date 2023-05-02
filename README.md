@@ -35,7 +35,7 @@ You can track the changes of the <strong>cljs-auto-title</strong> library [here]
 ### How to place a title sensor?
 
 The [`auto-title.api/sensor`](documentation/cljs/auto-title/API.md/#sensor) component
-could be placed right above or belove any title element.
+could be placed right above or below any title element.
 
 ```
 (defn my-app
@@ -47,10 +47,10 @@ could be placed right above or belove any title element.
 ### How to display the auto title value?
 
 The [`auto-title.api/TITLE`](documentation/cljs/auto-title/API.md/#title) Reagent
-atom stores the actual title set by any sensor that leaved the viewport.
+atom stores the actual title set by any sensor that left the viewport.
 
 In this example the fixed positioned header element is always visible and it displays
-the `My application` title if the title sensor leaved the viewport and the actual
+the `My application` title if the title sensor left the viewport and the actual
 title element is no longer visible.
 
 ```
