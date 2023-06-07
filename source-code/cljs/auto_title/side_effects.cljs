@@ -3,8 +3,7 @@
     (:require [auto-title.state          :as state]
               [dom.api                   :as dom]
               [hiccup.api                :as hiccup]
-              [intersection-observer.api :as intersection-observer]
-              [metamorphic-content.api   :as metamorphic-content]))
+              [intersection-observer.api :as intersection-observer]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -33,9 +32,8 @@
   ; {:placeholder (metamorphic-content)(opt)
   ;  :title (metamorphic-content)(opt)}
   [_ {:keys [placeholder title]}]
-  (if (-> title metamorphic-content/compose empty?)
-      (reset! state/TITLE placeholder)
-      (reset! state/TITLE title)))
+  (reset! state/PLACEHOLDER placeholder)
+  (reset! state/TITLE       title))
 
 (defn clear-title!
   ; @ignore
@@ -61,9 +59,7 @@
   ;
   ; @param (keyword) sensor-id
   ; @param (map) sensor-props
-  ; {:placeholder (metamorphic-content)(opt)
-  ;  :title (metamorphic-content)(opt)}
-  [sensor-id {:keys [placeholder title] :as sensor-props}]
+  [sensor-id sensor-props]
   (letfn [(f [intersecting?] (if intersecting? (hide-title! sensor-id sensor-props)
                                                (show-title! sensor-id sensor-props)))]
          (let [element-id (hiccup/value sensor-id "auto-title-sensor")]

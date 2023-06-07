@@ -32,6 +32,8 @@ You can track the changes of the <strong>cljs-auto-title</strong> library [here]
 
 - [How to display the auto title value?](#how-to-display-the-auto-title-value)
 
+- [How to use the placeholder value?](#how-to-use-the-placeholder-value)
+
 ### How to place a title sensor?
 
 The [`auto-title.api/sensor`](documentation/cljs/auto-title/API.md/#sensor) component
@@ -57,6 +59,20 @@ title element is no longer visible.
 (defn my-app
   []
   [:div#my-app [:section [sensor {:title "My application"}]
-                         [:div "My application"]]])
-               [:header {:style {:position :fixed}} @TITLE]
+                         [:div "My application"]]
+               [:header {:style {:position :fixed}} @TITLE]])
+```
+
+### How to use the placeholder value?
+
+The [`auto-title.api/PLACEHOLDER`](documentation/cljs/auto-title/API.md/#title)
+Reagent atom stores the actual title placeholder set by any sensor that left the viewport.
+
+```
+(defn my-app
+  []
+  (let [app-title (get-app-title-from-state ...)]
+       [:div#my-app [:section [sensor {:title app-title :placeholder "My placeholder"}]
+                              [:div "My application"]]
+                    [:header {:style {:position :fixed}} (or @TITLE @PLACEHOLDER)]])
 ```

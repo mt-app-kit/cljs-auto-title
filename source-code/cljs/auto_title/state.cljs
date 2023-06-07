@@ -6,6 +6,9 @@
 ;; ----------------------------------------------------------------------------
 
 ; @atom (metamorphic-content)
+(defonce PLACEHOLDER (ratom nil))
+
+; @atom (metamorphic-content)
 (defonce TITLE (ratom nil))
 
 ; @atom (boolean)
