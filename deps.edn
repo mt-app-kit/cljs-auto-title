@@ -3,10 +3,10 @@
  :deps  {bithandshake/cljc-fruits           {:git/url "https://github.com/bithandshake/cljc-fruits"
                                              :sha     "905486f92c47abe4c715bcef0da4628f2e4301c2"}
          bithandshake/cljs-dom              {:git/url "https://github.com/bithandshake/cljs-dom"
-                                             :sha     "2ef49e6fd2195d31bce3590d8bea8d1c4b8bc285"}
+                                             :sha     "e3608e8faf37c158ad54bf6e312a81eccee066fc"}
          bithandshake/intersection-observer {:git/url "https://github.com/bithandshake/cljs-intersection-observer"
-                                             :sha     "2ef49e6fd2195d31bce3590d8bea8d1c4b8bc285"}
+                                             :sha     "e3608e8faf37c158ad54bf6e312a81eccee066fc"}
          bithandshake/metamorphic-content   {:git/url "https://github.com/bithandshake/cljs-metamorphic-content"
-                                             :sha     "2ef49e6fd2195d31bce3590d8bea8d1c4b8bc285"}
+                                             :sha     "e3608e8faf37c158ad54bf6e312a81eccee066fc"}
          bithandshake/reagent-api           {:git/url "https://github.com/bithandshake/reagent-api"
-                                             :sha     "2ef49e6fd2195d31bce3590d8bea8d1c4b8bc285"}}}
+                                             :sha     "e3608e8faf37c158ad54bf6e312a81eccee066fc"}}}
