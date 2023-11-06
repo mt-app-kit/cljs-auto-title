@@ -1,11 +1,17 @@
 
-# auto-title.api ClojureScript namespace
+### auto-title.api
+
+Functional documentation of the auto-title.api ClojureScript namespace
+
+---
 
 ##### [README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > auto-title.api
 
 ### Index
 
 - [sensor](#sensor)
+
+---
 
 ### sensor
 
@@ -60,5 +66,5 @@
 
 ---
 
-This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.
+<sub>This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.</sub>
 
