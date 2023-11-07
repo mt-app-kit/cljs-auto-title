@@ -4,7 +4,7 @@
               [css.api          :as css]
               [hiccup.api       :as hiccup]
               [random.api       :as random]
-              [reagent.api      :as reagent]))
+              [reagent.core     :as reagent]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -28,12 +28,12 @@
    ; The following cases have to handled:
    ; 1. More than one 'sensor' component mounted into the React tree.
    ; 2. A 'sensor' component unmounts just after when the next one mounted into the React tree.
-   ; 3. A 'sensor' component updates after it has mounted into the React tree (e.g. the title changes).
+   ; 3. A 'sensor' component updates after it has mounted into the React tree (e.g., the title changes).
    ; 4. A 'sensor' component mounts into the React tree outside the viewport.
    ; 5. A 'sensor' component mounts into the React tree inside the viewport.
-   (reagent/lifecycles {:component-did-mount    (fn []  (utils/title-sensor-did-mount-f    sensor-id sensor-props))
-                        :component-will-unmount (fn []  (utils/title-sensor-will-unmount-f sensor-id sensor-props))
-                        :component-did-update   (fn [%] (utils/title-sensor-did-update-f   sensor-id %))
-                        :reagent-render         (fn []  (let [element-id (hiccup/value sensor-id "auto-title-sensor")]
-                                                             [:div {:style (if offset {:transform (-> offset css/px css/translate-y)})
-                                                                    :id element-id}]))})))
+   (reagent/create-class {:component-did-mount    (fn []  (utils/title-sensor-did-mount-f    sensor-id sensor-props))
+                          :component-will-unmount (fn []  (utils/title-sensor-will-unmount-f sensor-id sensor-props))
+                          :component-did-update   (fn [%] (utils/title-sensor-did-update-f   sensor-id %))
+                          :reagent-render         (fn []  (let [element-id (hiccup/value sensor-id "auto-title-sensor")]
+                                                               [:div {:style (if offset {:transform (-> offset css/px css/translate-y)})
+                                                                      :id element-id}]))})))

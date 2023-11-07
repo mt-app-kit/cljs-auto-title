@@ -42,12 +42,12 @@ Functional documentation of the auto-title.api ClojureScript namespace
    [sensor (random/generate-keyword) sensor-props])
 
   ([sensor-id {:keys [offset] :as sensor-props}]
-   (reagent/lifecycles {:component-did-mount    (fn []  (utils/title-sensor-did-mount-f    sensor-id sensor-props))
-                        :component-will-unmount (fn []  (utils/title-sensor-will-unmount-f sensor-id sensor-props))
-                        :component-did-update   (fn [%] (utils/title-sensor-did-update-f   sensor-id %))
-                        :reagent-render         (fn []  (let [element-id (hiccup/value sensor-id "auto-title-sensor")]
-                                                             [:div {:style (if offset {:transform (-> offset css/px css/translate-y)})
-                                                                    :id element-id}]))})))
+   (reagent/create-class {:component-did-mount    (fn []  (utils/title-sensor-did-mount-f    sensor-id sensor-props))
+                          :component-will-unmount (fn []  (utils/title-sensor-will-unmount-f sensor-id sensor-props))
+                          :component-did-update   (fn [%] (utils/title-sensor-did-update-f   sensor-id %))
+                          :reagent-render         (fn []  (let [element-id (hiccup/value sensor-id "auto-title-sensor")]
+                                                               [:div {:style (if offset {:transform (-> offset css/px css/translate-y)})
+                                                                      :id element-id}]))})))
 ```
 
 </details>

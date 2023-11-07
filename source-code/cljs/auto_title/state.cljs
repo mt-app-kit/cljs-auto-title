@@ -1,6 +1,6 @@
 
 (ns auto-title.state
-    (:require [reagent.api :refer [ratom]]))
+    (:require [reagent.core :refer [atom] :rename {atom ratom}]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
