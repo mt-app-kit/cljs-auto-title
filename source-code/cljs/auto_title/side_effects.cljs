@@ -60,10 +60,10 @@
   ; @param (keyword) sensor-id
   ; @param (map) sensor-props
   [sensor-id sensor-props]
-  (letfn [(f [intersecting?] (if intersecting? (hide-title! sensor-id sensor-props)
-                                               (show-title! sensor-id sensor-props)))]
+  (letfn [(f0 [intersecting?] (if intersecting? (hide-title! sensor-id sensor-props)
+                                                (show-title! sensor-id sensor-props)))]
          (let [element-id (hiccup/value sensor-id "auto-title-sensor")]
-              (intersection-observer/setup-observer! element-id f))))
+              (intersection-observer/setup-observer! element-id f0))))
 
 (defn remove-intersection-observer!
   ; @ignore
