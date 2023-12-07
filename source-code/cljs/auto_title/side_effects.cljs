@@ -2,7 +2,7 @@
 (ns auto-title.side-effects
     (:require [auto-title.state          :as state]
               [dom.api                   :as dom]
-              [hiccup.api                :as hiccup]
+              [fruits.hiccup.api         :as hiccup]
               [intersection-observer.api :as intersection-observer]))
 
 ;; ----------------------------------------------------------------------------

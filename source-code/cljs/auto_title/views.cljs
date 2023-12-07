@@ -1,10 +1,10 @@
 
 (ns auto-title.views
-    (:require [auto-title.utils :as utils]
-              [css.api          :as css]
-              [hiccup.api       :as hiccup]
-              [random.api       :as random]
-              [reagent.core     :as reagent]))
+    (:require [auto-title.utils  :as utils]
+              [fruits.css.api    :as css]
+              [fruits.hiccup.api :as hiccup]
+              [fruits.random.api :as random]
+              [reagent.core      :as reagent]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
