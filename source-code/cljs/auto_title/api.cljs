@@ -6,9 +6,9 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; auto-title.state
+; @redirect (auto-title.state)
 (def TITLE    state/TITLE)
 (def VISIBLE? state/VISIBLE?)
 
-; auto-title.views
+; @redirect (auto-title.views)
 (def sensor views/sensor)
