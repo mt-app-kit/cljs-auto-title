@@ -14,8 +14,8 @@
   ; @param (keyword) sensor-id
   ; @param (map) sensor-props
   [sensor-id sensor-props]
-  ; When a 'sensor' component mounts into the React tree, the previous one might
-  ; just unmounting with an ongoing disappearing effect.
+  ; When a 'sensor' component mounts into the React-tree, the previous one might
+  ; currently unmounting with an ongoing disappearing effect.
   ; Therefore, the currently mounted one has to wait before it applies the 'set-title!'
   ; function, otherwise the disappearing title might changes in the last moments
   ; of disappearing.

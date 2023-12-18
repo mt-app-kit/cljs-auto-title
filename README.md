@@ -16,7 +16,7 @@ can update the title in your application header.
 
 ```
 {:deps {bithandshake/cljs-auto-title {:git/url "https://github.com/bithandshake/cljs-auto-title"
-                                      :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}
+                                      :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
