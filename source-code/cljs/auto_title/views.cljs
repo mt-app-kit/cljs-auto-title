@@ -25,7 +25,7 @@
    [sensor (random/generate-keyword) sensor-props])
 
   ([sensor-id {:keys [offset] :as sensor-props}]
-   ; The following cases have to handled:
+   ; The following cases might occur:
    ; 1. More than one 'sensor' component mounted into the React-tree.
    ; 2. A 'sensor' component unmounts right after when the next one mounted into the React-tree.
    ; 3. A 'sensor' component updates after it has mounted into the React-tree (e.g., the title changes).

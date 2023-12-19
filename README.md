@@ -9,7 +9,7 @@ to detect whether they are in the viewport.
 When a title's sensor leaves the viewport it sets its content into a Reagent atom that
 can update the title in your application header.
 
-> UI components in this library are Reagent components. Check out the [Reagent Project](https://github.com/reagent-project/reagent).
+> UI components in this library are [Reagent](https://github.com/reagent-project/reagent) components.
 
 ### deps.edn
 
