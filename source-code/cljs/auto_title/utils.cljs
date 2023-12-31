@@ -16,9 +16,8 @@
   [sensor-id sensor-props]
   ; When a 'sensor' component mounts into the React-tree, the previous one might
   ; currently unmounting with an ongoing disappearing effect.
-  ; Therefore, the currently mounted one has to wait before it applies the 'set-title!'
-  ; function, otherwise the disappearing title might changes in the last moments
-  ; of disappearing.
+  ; Therefore, the currently mounted component has to wait before it applies the 'set-title!'
+  ; function. Otherwise, the disappearing title would change in the last moments of its disappearing.
   (letfn [(f0 [] (side-effects/set-title! sensor-id sensor-props))]
          (time/set-timeout! f0 150))
   (swap! state/SENSORS assoc sensor-id sensor-props)
