@@ -7,8 +7,6 @@ The <strong>cljs-auto-title</strong> is a simple intersection observer controlle
 When a title component's intersection observer leaves the viewport it sets the title into a Reagent atom that
 can update the title in your application header.
 
-> UI components in this library are [Reagent](https://github.com/reagent-project/reagent) components.
-
 ### deps.edn
 
 ```
