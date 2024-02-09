@@ -5,11 +5,12 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @atom (metamorphic-content)
-(defonce PLACEHOLDER (ratom nil))
 
 ; @atom (metamorphic-content)
 (defonce TITLE (ratom nil))
+
+; @atom (metamorphic-content)
+(defonce TITLE-PLACEHOLDER (ratom nil))
 
 ; @atom (boolean)
 (defonce VISIBLE? (ratom false))

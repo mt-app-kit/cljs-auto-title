@@ -13,8 +13,8 @@
   ; @param (keyword)(opt) sensor-id
   ; @param (map) sensor-props
   ; {:offset (px)(opt)
-  ;  :placeholder (metamorphic-content)(opt)
-  ;  :title (metamorphic-content)(opt)}
+  ;  :title (metamorphic-content)(opt)
+  ;  :title-placeholder (metamorphic-content)(opt)}
   ;
   ; @usage
   ; [sensor {...}]

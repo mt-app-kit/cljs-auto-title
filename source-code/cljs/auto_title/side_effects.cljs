@@ -29,11 +29,11 @@
   ;
   ; @param (keyword) sensor-id
   ; @param (map) sensor-props
-  ; {:placeholder (metamorphic-content)(opt)
-  ;  :title (metamorphic-content)(opt)}
-  [_ {:keys [placeholder title]}]
-  (reset! state/PLACEHOLDER placeholder)
-  (reset! state/TITLE       title))
+  ; {:title (metamorphic-content)(opt)
+  ;  :title-placeholder (metamorphic-content)(opt)}
+  [_ {:keys [title title-placeholder]}]
+  (reset! state/TITLE             title)
+  (reset! state/TITLE-PLACEHOLDER title-placeholder))
 
 (defn clear-title!
   ; @ignore
