@@ -2,7 +2,7 @@
 (ns auto-title.utils
     (:require [auto-title.side-effects :as side-effects]
               [auto-title.state        :as state]
-              [reagent.api             :as reagent]
+              [reagent.tools.api :as reagent.tools]
               [time.api                :as time]))
 
 ;; ----------------------------------------------------------------------------
@@ -38,5 +38,5 @@
   ; @param (keyword) sensor-id
   ; @param (?) %
   [sensor-id %]
-  (let [[_ sensor-props] (reagent/arguments %)]
+  (let [[_ sensor-props] (reagent.tools/arguments %)]
        (side-effects/update-title! sensor-id sensor-props)))

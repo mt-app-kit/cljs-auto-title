@@ -1,21 +1,21 @@
 
 (ns auto-title.state
-    (:require [reagent.core :refer [atom] :rename {atom ratom}]))
+    (:require [reagent.core :as reagent]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
 
 ; @atom (metamorphic-content)
-(defonce TITLE (ratom nil))
+(defonce TITLE (reagent/atom nil))
 
 ; @atom (metamorphic-content)
-(defonce TITLE-PLACEHOLDER (ratom nil))
+(defonce TITLE-PLACEHOLDER (reagent/atom nil))
 
 ; @atom (boolean)
-(defonce VISIBLE? (ratom false))
+(defonce VISIBLE? (reagent/atom false))
 
 ; @ignore
 ;
 ; @atom (map)
-(defonce SENSORS (ratom {}))
+(defonce SENSORS (reagent/atom {}))

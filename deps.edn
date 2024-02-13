@@ -1,12 +1,14 @@
 
 {:paths ["source-code/cljs"]
  :deps  {bithandshake/cljc-fruits                {:git/url "https://github.com/bithandshake/cljc-fruits"
-                                                  :sha     "0b639523b78bd8b8e9acd487b519025970119a5e"}
+                                                  :sha     "f411660d56aa8a1d4d753e53d5f57abf90c2dc7a"}
          bithandshake/cljs-dom                   {:git/url "https://github.com/bithandshake/cljs-dom"
-                                                  :sha     "f78b38362865046ade45887104447fb19ce9fdae"}
+                                                  :sha     "182847250674cd28a3db58a4d9a4d051850aa781"}
          bithandshake/cljs-intersection-observer {:git/url "https://github.com/bithandshake/cljs-intersection-observer"
-                                                  :sha     "f78b38362865046ade45887104447fb19ce9fdae"}
+                                                  :sha     "182847250674cd28a3db58a4d9a4d051850aa781"}
+         bithandshake/reagent-api                {:git/url "https://github.com/bithandshake/reagent-api"
+                                                  :sha     "f411660d56aa8a1d4d753e53d5f57abf90c2dc7a"}
          mt-app-kit/cljc-metamorphic-content     {:git/url "https://github.com/mt-app-kit/cljc-metamorphic-content"
-                                                  :sha     "f78b38362865046ade45887104447fb19ce9fdae"}
+                                                  :sha     "182847250674cd28a3db58a4d9a4d051850aa781"}
          org.clojure/clojurescript               {:mvn/version "1.10.891"}
          reagent/reagent                         {:mvn/version "1.2.0"}}}
