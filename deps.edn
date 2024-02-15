@@ -1,14 +1,14 @@
 
 {:paths ["source-code/cljs"]
  :deps  {bithandshake/cljc-fruits                {:git/url "https://github.com/bithandshake/cljc-fruits"
-                                                  :sha     "f411660d56aa8a1d4d753e53d5f57abf90c2dc7a"}
+                                                  :sha     "b47d40718e648b807e2e9ffe578082bc4c797f20"}
          bithandshake/cljs-dom                   {:git/url "https://github.com/bithandshake/cljs-dom"
-                                                  :sha     "182847250674cd28a3db58a4d9a4d051850aa781"}
+                                                  :sha     "c3e21575f28794d138cf6171d2e707118b4d7abf"}
          bithandshake/cljs-intersection-observer {:git/url "https://github.com/bithandshake/cljs-intersection-observer"
-                                                  :sha     "182847250674cd28a3db58a4d9a4d051850aa781"}
-         bithandshake/reagent-api                {:git/url "https://github.com/bithandshake/reagent-api"
-                                                  :sha     "f411660d56aa8a1d4d753e53d5f57abf90c2dc7a"}
+                                                  :sha     "c3e21575f28794d138cf6171d2e707118b4d7abf"}
+         bithandshake/reagent-utils              {:git/url "https://github.com/bithandshake/reagent-utils"
+                                                  :sha     "b47d40718e648b807e2e9ffe578082bc4c797f20"}
          mt-app-kit/cljc-metamorphic-content     {:git/url "https://github.com/mt-app-kit/cljc-metamorphic-content"
-                                                  :sha     "182847250674cd28a3db58a4d9a4d051850aa781"}
+                                                  :sha     "c3e21575f28794d138cf6171d2e707118b4d7abf"}
          org.clojure/clojurescript               {:mvn/version "1.10.891"}
          reagent/reagent                         {:mvn/version "1.2.0"}}}
