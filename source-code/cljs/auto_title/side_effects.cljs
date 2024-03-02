@@ -29,8 +29,8 @@
   ;
   ; @param (keyword) sensor-id
   ; @param (map) sensor-props
-  ; {:title (metamorphic-content)(opt)
-  ;  :title-placeholder (metamorphic-content)(opt)}
+  ; {:title (multitype-content)(opt)
+  ;  :title-placeholder (multitype-content)(opt)}
   [_ {:keys [title title-placeholder]}]
   (reset! state/TITLE             title)
   (reset! state/TITLE-PLACEHOLDER title-placeholder))

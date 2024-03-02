@@ -6,10 +6,10 @@
 ;; ----------------------------------------------------------------------------
 
 
-; @atom (metamorphic-content)
+; @atom (multitype-content)
 (defonce TITLE (reagent/atom nil))
 
-; @atom (metamorphic-content)
+; @atom (multitype-content)
 (defonce TITLE-PLACEHOLDER (reagent/atom nil))
 
 ; @atom (boolean)
