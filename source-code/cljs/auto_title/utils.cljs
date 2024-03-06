@@ -2,7 +2,7 @@
 (ns auto-title.utils
     (:require [auto-title.side-effects :as side-effects]
               [auto-title.state        :as state]
-              [reagent.tools.api :as reagent.tools]
+              [reagent.tools.api       :as reagent.tools]
               [time.api                :as time]))
 
 ;; ----------------------------------------------------------------------------
