@@ -25,7 +25,7 @@
 (defn sensor
   ; @description
   ; Scroll sensor element that keeps track of section titles of the page and automatically sets the actual title
-  ; value (in the auto title state) depending on which sensor is the closest to the viewport upper horizon from the outside.
+  ; value (in the auto title state) depending on which sensor is closest to the viewport upper boundary from the outside.
   ;
   ; @param (keyword)(opt) sensor-id
   ; @param (map) sensor-props

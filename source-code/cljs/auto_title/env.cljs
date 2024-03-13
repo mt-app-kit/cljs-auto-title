@@ -11,7 +11,7 @@
 
 (defn get-actual-title
   ; @description
-  ; Returns the actual title (in the auto title state) depending on which sensor is the closest to the upper horizon of the viewport from the outside.
+  ; Returns the actual title (in the auto title state) depending on which sensor is closest to the upper boundary of the viewport from the outside.
   ;
   ; @usage
   ; (get-actual-title)
@@ -29,7 +29,7 @@
   ; @ignore
   ;
   ; @description
-  ; Returns the ID of the sensor that is the closest to the upper horizon of the viewport from the outside.
+  ; Returns the ID of the sensor that is closest to the upper boundary of the viewport from the outside.
   ;
   ; @usage
   ; (detect-closest-sensor)
@@ -43,7 +43,7 @@
   (let [mounted-sensors (common-state/get-state :auto-title :mounted-sensors)]
        (letfn [(f0 [[closest-id closest-y] sensor-id _]
                    (let [sensor-reference (react-references/get-reference sensor-id)
-                         sensor-y         (dom/get-element-relative-top   sensor-reference)]
+                         sensor-y         (dom/get-element-relative-y     sensor-reference)]
                         (if closest-id (cond (-> sensor-y math/not-negative?) [closest-id closest-y]
                                              (-> closest-y (< sensor-y))      [sensor-id  sensor-y]
                                              (-> closest-y (>= sensor-y))     [closest-id closest-y])
@@ -54,7 +54,7 @@
   ; @ignore
   ;
   ; @description
-  ; Returns the title of the sensor that is the closest to the upper horizon of the viewport from the outside.
+  ; Returns the title of the sensor that is closest to the upper boundary of the viewport from the outside.
   ;
   ; @usage
   ; (detect-closest-title)
