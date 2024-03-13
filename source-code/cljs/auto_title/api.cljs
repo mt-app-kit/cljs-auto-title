@@ -1,14 +1,20 @@
 
 (ns auto-title.api
-    (:require [auto-title.state :as state]
+    (:require [auto-title.env :as env]
               [auto-title.views :as views]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; @redirect (auto-title.state)
-(def TITLE    state/TITLE)
-(def VISIBLE? state/VISIBLE?)
+; @tutorial Demo
+;
+; 
 
-; @redirect (auto-title.views)
+;; ----------------------------------------------------------------------------
+;; ----------------------------------------------------------------------------
+
+; @redirect (auto-title.env/*)
+(def get-actual-title env/get-actual-title)
+
+; @redirect (auto-title.views/*)
 (def sensor views/sensor)

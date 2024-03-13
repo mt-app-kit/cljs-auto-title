@@ -1,75 +1,70 @@
 
 (ns auto-title.side-effects
-    (:require [auto-title.state          :as state]
-              [dom.api                   :as dom]
-              [fruits.hiccup.api         :as hiccup]
-              [intersection-observer.api :as intersection-observer]))
+    (:require [reagent.tools.api :as reagent.tools]
+              [common-state.api :as common-state]
+              [auto-title.env :as env]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
-
-(defn show-title!
-  ; @ignore
-  ;
-  ; @param (keyword) sensor-id
-  ; @param (map) sensor-props
-  [_ _]
-  (reset! state/VISIBLE? true))
-
-(defn hide-title!
-  ; @ignore
-  ;
-  ; @param (keyword) sensor-id
-  ; @param (map) sensor-props
-  [_ _]
-  (reset! state/VISIBLE? false))
-
-(defn set-title!
-  ; @ignore
-  ;
-  ; @param (keyword) sensor-id
-  ; @param (map) sensor-props
-  ; {:title (multitype-content)(opt)
-  ;  :title-placeholder (multitype-content)(opt)}
-  [_ {:keys [title title-placeholder]}]
-  (reset! state/TITLE             title)
-  (reset! state/TITLE-PLACEHOLDER title-placeholder))
-
-(defn clear-title!
-  ; @ignore
-  ;
-  ; @param (keyword) sensor-id
-  ; @param (map) sensor-props
-  [_ _]
-  (reset! state/TITLE nil))
 
 (defn update-title!
   ; @ignore
   ;
-  ; @param (keyword) sensor-id
-  ; @param (map) sensor-props
-  [sensor-id sensor-props]
-  (set-title! sensor-id sensor-props))
+  ; @usage
+  ; (update-title!)
+  []
+  (let [closest-title (env/detect-closest-title)]
+       (common-state/assoc-state! :auto-title :actual-title closest-title)))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-(defn setup-intersection-observer!
+(defn sensor-did-mount
   ; @ignore
   ;
   ; @param (keyword) sensor-id
   ; @param (map) sensor-props
+  ;
+  ; @usage
+  ; (sensor-did-mount :my-sensor {...})
   [sensor-id sensor-props]
-  (letfn [(f0 [intersecting?] (if intersecting? (hide-title! sensor-id sensor-props)
-                                                (show-title! sensor-id sensor-props)))]
-         (let [element-id (hiccup/value sensor-id "auto-title-sensor")]
-              (intersection-observer/setup-observer! element-id f0))))
+  (common-state/assoc-state! :auto-title :mounted-sensors sensor-id sensor-props)
+  (update-title!))
 
-(defn remove-intersection-observer!
+(defn sensor-did-update
   ; @ignore
   ;
   ; @param (keyword) sensor-id
   ; @param (map) sensor-props
+  ; @param (Reagent component object) %
+  ;
+  ; @usage
+  ; (sensor-did-update :my-sensor {...})
+  [sensor-id _ %]
+  (let [[_ sensor-props] (reagent.tools/arguments %)]
+       (common-state/assoc-state! :auto-title :mounted-sensors sensor-id sensor-props)
+       (update-title!)))
+
+(defn sensor-will-unmount
+  ; @ignore
+  ;
+  ; @param (keyword) sensor-id
+  ; @param (map) sensor-props
+  ;
+  ; @usage
+  ; (sensor-will-unmount :my-sensor {...})
   [sensor-id _]
-  (let [element-id (hiccup/value sensor-id "auto-title-sensor")]
-       (intersection-observer/remove-observer! element-id)))
+  (common-state/dissoc-state! :auto-title :mounted-sensors sensor-id)
+  (update-title!))
+
+(defn sensor-intersects
+  ; @ignore
+  ;
+  ; @param (keyword) sensor-id
+  ; @param (map) sensor-props
+  ; @param (boolean) sensor-intersects?
+  ;
+  ; @usage
+  ; (sensor-intersects :my-sensor {...} true)
+  [_ _ _]
+  (update-title!))

@@ -3,9 +3,7 @@
 
 ### Overview
 
-The <strong>cljs-auto-title</strong> is a simple intersection observer controlled application title component (Reagent) for Clojure projects.
-When a title component's intersection observer leaves the viewport it sets the title into a Reagent atom that
-can update the title in your application header.
+The <strong>cljs-auto-title</strong> is a simple scroll sensor for control application title in Clojure projects.
 
 ### deps.edn
 
