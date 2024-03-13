@@ -24,19 +24,20 @@
 
 (defn sensor
   ; @description
-  ; ...
+  ; Scroll sensor element that keeps track of section titles of the page and automatically sets the actual title
+  ; value (in the auto title state) depending on which sensor is the closest to the viewport upper horizon from the outside.
   ;
   ; @param (keyword)(opt) sensor-id
   ; @param (map) sensor-props
-  ; {:offset (px)(opt)
+  ; {:offset-y (px)(opt)
   ;  :title (multitype-content)(opt)
   ;  :title-placeholder (multitype-content)(opt)}
   ;
   ; @usage
-  ; [sensor {...}]
+  ; [sensor {:title "My title"}]
   ;
   ; @usage
-  ; [sensor :my-sensor {...}]
+  ; [sensor :my-sensor {:title "My title"}]
   ([sensor-props]
    [sensor (random/generate-keyword) sensor-props])
 

@@ -11,7 +11,12 @@
 
 (defn get-actual-title
   ; @description
-  ; Returns the last set title (from the auto title state).
+  ; Returns the actual title (in the auto title state) depending on which sensor is the closest to the upper horizon of the viewport from the outside.
+  ;
+  ; @usage
+  ; (get-actual-title)
+  ; =>
+  ; "My title"
   ;
   ; @return (multitype-content)
   []

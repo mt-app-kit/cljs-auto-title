@@ -11,7 +11,7 @@
   ;
   ; @param (keyword) sensor-id
   ; @param (map) sensor-props
-  ; {:offset (px)(opt)
+  ; {:offset-y (px)(opt)
   ;  ...}
   ;
   ; @return (map)
@@ -19,8 +19,8 @@
   ;  :data-sensor-id (keyword)
   ;  :ref (function)
   ;  :style (map)}
-  [sensor-id {:keys [offset]}]
+  [sensor-id {:keys [offset-y]}]
   {:data-sensor-class (-> :auto-title)
    :data-sensor-id    (-> sensor-id)
    :ref               (react-references/set-reference-f sensor-id)
-   :style             (if offset {:transform (-> offset css/px css/translate-y)})})
+   :style             (if offset-y {:transform (-> offset-y css/px css/translate-y)})})
