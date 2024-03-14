@@ -16,10 +16,10 @@ The <strong>cljs-auto-title</strong> is a simple scroll sensor for dynamically u
 
 Check out the latest commit on the [release branch](https://github.com/mt-app-kit/cljs-auto-title/tree/release).
 
-### Documentation
-
-The <strong>cljs-auto-title</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-auto-title).
-
 ### Changelog
 
 You can track the changes of the <strong>cljs-auto-title</strong> library [here](CHANGES.md).
+
+# Documentation
+
+The <strong>cljs-auto-title</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljs-auto-title).
