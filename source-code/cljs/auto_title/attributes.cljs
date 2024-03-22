@@ -1,7 +1,7 @@
 
 (ns auto-title.attributes
-    (:require [react-references.api :as react-references]
-              [fruits.css.api :as css]))
+    (:require [fruits.css.api       :as css]
+              [react-references.api :as react-references]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

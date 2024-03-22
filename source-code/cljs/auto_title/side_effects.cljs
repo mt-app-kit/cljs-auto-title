@@ -1,8 +1,8 @@
 
 (ns auto-title.side-effects
-    (:require [reagent.tools.api :as reagent.tools]
-              [common-state.api :as common-state]
-              [auto-title.env :as env]))
+    (:require [auto-title.env    :as env]
+              [common-state.api  :as common-state]
+              [reagent.tools.api :as reagent.tools]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

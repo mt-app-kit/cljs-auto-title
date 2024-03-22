@@ -1,6 +1,6 @@
 
 (ns auto-title.api
-    (:require [auto-title.env :as env]
+    (:require [auto-title.env   :as env]
               [auto-title.views :as views]))
 
 ;; ----------------------------------------------------------------------------

@@ -1,10 +1,10 @@
 
 (ns auto-title.views
-    (:require [auto-title.side-effects :as side-effects]
-              [auto-title.attributes :as attributes]
-              [fruits.random.api :as random]
-              [reagent.core      :as reagent]
-              [intersection-observer.api :as intersection-observer]))
+    (:require [auto-title.attributes     :as attributes]
+              [auto-title.side-effects   :as side-effects]
+              [fruits.random.api         :as random]
+              [intersection-observer.api :as intersection-observer]
+              [reagent.core              :as reagent]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

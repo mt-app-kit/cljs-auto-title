@@ -1,10 +1,10 @@
 
 (ns auto-title.env
-    (:require [common-state.api :as common-state]
-              [dom.api :as dom]
-              [react-references.api :as react-references]
+    (:require [common-state.api      :as common-state]
+              [dom.api               :as dom]
+              [fruits.math.api       :as math]
               [multitype-content.api :as multitype-content]
-              [fruits.math.api :as math]))
+              [react-references.api  :as react-references]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
