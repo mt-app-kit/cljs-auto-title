@@ -1,18 +1,18 @@
 
 {:paths ["source-code/cljs"]
  :deps  {mt-app-kit/cljc-common-state            {:git/url "https://github.com/mt-app-kit/cljc-common-state"
-                                                  :sha     "5b567fa5c3de8ced50b145048b4fdd77509bc6f1"}
+                                                  :sha     "41379336fd91e512f42c52106aa7d9e873f77d31"}
          mt-app-kit/cljc-multitype-content       {:git/url "https://github.com/mt-app-kit/cljc-multitype-content"
-                                                  :sha     "e507cf5fe6632a0bb06a27fadf0f882536f3197a"}
+                                                  :sha     "2016061377972a40c1f7d2cae2f52ffbc891c4d3"}
          mt-app-kit/cljs-intersection-observer   {:git/url "https://github.com/mt-app-kit/cljs-intersection-observer"
-                                                  :sha     "e507cf5fe6632a0bb06a27fadf0f882536f3197a"}
+                                                  :sha     "2016061377972a40c1f7d2cae2f52ffbc891c4d3"}
          mt-app-kit/cljs-react-references        {:git/url "https://github.com/mt-app-kit/cljs-react-references"
-                                                  :sha     "5b567fa5c3de8ced50b145048b4fdd77509bc6f1"}
+                                                  :sha     "41379336fd91e512f42c52106aa7d9e873f77d31"}
          mt-extensions/reagent-utils             {:git/url "https://github.com/mt-extensions/reagent-utils"
                                                   :sha     "0527ffbf5a08305dfd4376a78c007f53c1a311b2"}
          bithandshake/cljc-fruits                {:git/url "https://github.com/bithandshake/cljc-fruits"
-                                                  :sha     "fc7f9978b1b8a5e6c75bc6523fb6c8631cfab4bc"}
+                                                  :sha     "289bfaa76c90632b4332e89a226eb657e7eb4107"}
          mt-utilities/cljs-dom                   {:git/url "https://github.com/mt-utilities/cljs-dom"
-                                                  :sha     "e507cf5fe6632a0bb06a27fadf0f882536f3197a"}
+                                                  :sha     "2016061377972a40c1f7d2cae2f52ffbc891c4d3"}
          org.clojure/clojurescript               {:mvn/version "1.10.891"}
          reagent/reagent                         {:mvn/version "1.2.0"}}}
