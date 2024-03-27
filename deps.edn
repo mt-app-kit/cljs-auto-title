@@ -9,9 +9,9 @@
          mt-app-kit/cljs-react-references        {:git/url "https://github.com/mt-app-kit/cljs-react-references"
                                                   :sha     "3baf548870e04c8990f15cb6dea970f07703b1b0"}
          mt-extensions/reagent-utils             {:git/url "https://github.com/mt-extensions/reagent-utils"
-                                                  :sha     "a8d3c6ff2e9a4da05e09454270b60cfd5a285f5b"}
+                                                  :sha     "d88432ae8ddae107e48768a79bba213f23862827"}
          bithandshake/cljc-fruits                {:git/url "https://github.com/bithandshake/cljc-fruits"
-                                                  :sha     "a8d3c6ff2e9a4da05e09454270b60cfd5a285f5b"}
+                                                  :sha     "d88432ae8ddae107e48768a79bba213f23862827"}
          mt-utilities/cljs-dom                   {:git/url "https://github.com/mt-utilities/cljs-dom"
                                                   :sha     "f38b65d4b03bce3735e5707ebfcd731b9d3eba13"}
          org.clojure/clojurescript               {:mvn/version "1.10.891"}
