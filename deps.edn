@@ -1,13 +1,13 @@
 
 {:paths ["source-code/cljs"]
  :deps  {mt-app-kit/cljc-common-state            {:git/url "https://github.com/mt-app-kit/cljc-common-state"
-                                                  :sha     "85e195270364c664590657c22e89b8cff2f6c99e"}
+                                                  :sha     "5b151fa85b99dfb7240a654ea63168b2e59e7e31"}
          mt-app-kit/cljc-multitype-content       {:git/url "https://github.com/mt-app-kit/cljc-multitype-content"
                                                   :sha     "1829ebfacdebd386c47616e56cd4a5d43b601103"}
          mt-app-kit/cljs-intersection-observer   {:git/url "https://github.com/mt-app-kit/cljs-intersection-observer"
                                                   :sha     "1829ebfacdebd386c47616e56cd4a5d43b601103"}
          mt-app-kit/cljs-react-references        {:git/url "https://github.com/mt-app-kit/cljs-react-references"
-                                                  :sha     "85e195270364c664590657c22e89b8cff2f6c99e"}
+                                                  :sha     "5b151fa85b99dfb7240a654ea63168b2e59e7e31"}
          mt-extensions/reagent-utils             {:git/url "https://github.com/mt-extensions/reagent-utils"
                                                   :sha     "0527ffbf5a08305dfd4376a78c007f53c1a311b2"}
          bithandshake/cljc-fruits                {:git/url "https://github.com/bithandshake/cljc-fruits"
