@@ -3,9 +3,9 @@
  :deps  {mt-app-kit/cljc-common-state            {:git/url "https://github.com/mt-app-kit/cljc-common-state"
                                                   :sha     "85e195270364c664590657c22e89b8cff2f6c99e"}
          mt-app-kit/cljc-multitype-content       {:git/url "https://github.com/mt-app-kit/cljc-multitype-content"
-                                                  :sha     "7fbcefb6bc9489603f7016f4c90640d85fb5ea10"}
+                                                  :sha     "664e183c4220ff6ab99c361078084ad002f142b4"}
          mt-app-kit/cljs-intersection-observer   {:git/url "https://github.com/mt-app-kit/cljs-intersection-observer"
-                                                  :sha     "7fbcefb6bc9489603f7016f4c90640d85fb5ea10"}
+                                                  :sha     "664e183c4220ff6ab99c361078084ad002f142b4"}
          mt-app-kit/cljs-react-references        {:git/url "https://github.com/mt-app-kit/cljs-react-references"
                                                   :sha     "85e195270364c664590657c22e89b8cff2f6c99e"}
          mt-extensions/reagent-utils             {:git/url "https://github.com/mt-extensions/reagent-utils"
@@ -13,6 +13,6 @@
          bithandshake/cljc-fruits                {:git/url "https://github.com/bithandshake/cljc-fruits"
                                                   :sha     "fcd4ebfed6cc44486464b5d619bef88d620c7f6a"}
          mt-utilities/cljs-dom                   {:git/url "https://github.com/mt-utilities/cljs-dom"
-                                                  :sha     "7fbcefb6bc9489603f7016f4c90640d85fb5ea10"}
+                                                  :sha     "664e183c4220ff6ab99c361078084ad002f142b4"}
          org.clojure/clojurescript               {:mvn/version "1.10.891"}
          reagent/reagent                         {:mvn/version "1.2.0"}}}
